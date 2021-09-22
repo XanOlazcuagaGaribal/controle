@@ -10,9 +10,12 @@ final class exoTddTest extends TestCase
         $this->assertEquals("I",ExoTDD::decimalToRoman(1));
         $this->assertEquals("II",ExoTDD::decimalToRoman(2));
         $this->assertEquals("III",ExoTDD::decimalToRoman(3));
+        $this->assertEquals("IV",ExoTDD::decimalToRoman(4));
         $this->assertEquals("X",ExoTDD::decimalToRoman(10));
         $this->assertEquals("XX",ExoTDD::decimalToRoman(20));
         $this->assertEquals("XXI",ExoTDD::decimalToRoman(21));
+        $this->assertEquals("XXV",ExoTDD::decimalToRoman(25));
+        $this->assertEquals("MMM",ExoTDD::decimalToRoman(3000));
     }
     
 }

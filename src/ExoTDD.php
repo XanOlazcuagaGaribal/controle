@@ -28,22 +28,12 @@ class ExoTDD
 
         $reste = $number; 
 
-        /*while($reste >= 10){
-            $result .= "X";
-            $reste-=10;
-        }
-        while($reste >= 1){
-            $result .= "I";
-            $reste-=1;
-        }*/
-        
         foreach($arrayRomanNumber as $romanNumber => $value){
             while($reste >= $value){
                 $result .= $romanNumber;
                 $reste-=$value;
             }
         }
-
         return $result;
     }
     /*
