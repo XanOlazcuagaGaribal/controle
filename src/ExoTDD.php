@@ -65,6 +65,13 @@ class ExoTDD
             if($roman == $romanNumber){
                 $result = $value;
             }
+
+            /** Solution from internet, didn't had time to get here
+             * while (strpos($romanNumber, $value) === 0) {
+             * $result += $value;
+             * $romanNumber = substr($romanNumber, strlen($value));
+             * }
+             */
         }
 
         return $result;
