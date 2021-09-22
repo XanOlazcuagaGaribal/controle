@@ -28,30 +28,23 @@ class ExoTDD
 
         $reste = $number; 
 
-        while($reste >= 10){
+        /*while($reste >= 10){
             $result .= "X";
             $reste-=10;
         }
         while($reste >= 1){
             $result .= "I";
             $reste-=1;
+        }*/
+        
+        foreach($arrayRomanNumber as $romanNumber => $value){
+            while($reste >= $value){
+                $result .= $romanNumber;
+                $reste-=$value;
+            }
         }
+
         return $result;
-
-
-        //Solution from internet
-        /*foreach($arrayRomanNumber as $roman => $value){
-            // Determine the number of matches
-            $matches = intval($number/$value);
-           
-            // Add the same number of characters to the string
-            $result .= str_repeat($roman,$matches);
-           
-            // Set the integer to be the remainder of the integer and the value
-            $number = $number % $value;
-           }
-
-        return $result;*/
     }
     /*
     2 - En utilisant la méthode TDD et dans le langage de votre choix, créer une fonction romanToDecimal qui prend en 
