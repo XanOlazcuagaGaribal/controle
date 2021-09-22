@@ -10,9 +10,24 @@ class ExoTDD
     Vous pouvez commencer par des tests simples : 0 (“”), 1 (“I”), 2 (“II”), 4 (“IV”), 5 (“V”), 6 (“VI”)… puis des nombres à plusieurs chiffres.
     */
     public static function decimalToRoman($number){
-        if($number == 1){
-            return "I";
-        }else return "";
+        
+        switch ($number) {
+            case '1':
+                return "I";
+                break;
+            case '2':
+                return "II";
+                break;
+            case '3':
+                return "III";
+                break;
+            case '4':
+                return "IV";
+                break;
+            default:
+                return "";
+                break;
+        }
     }
     /*
     2 - En utilisant la méthode TDD et dans le langage de votre choix, créer une fonction romanToDecimal qui prend en 
