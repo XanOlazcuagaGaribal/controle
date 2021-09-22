@@ -2,11 +2,12 @@
 
 use PHPUnit\Framework\TestCase;
 
-final class ExoTddTest extends TestCase
+final class exoTddTest extends TestCase
 {
     public function testDecimalToRoman(): void
     {
-        $this->assertEquals("", ExoTDD::decimalToRoman(0));   
+        $this->assertEquals("", ExoTDD::decimalToRoman(0));
+        $this->assertEquals("I",ExoTDD::decimalToRoman(1));
     }
     
 }
