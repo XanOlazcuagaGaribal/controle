@@ -26,16 +26,16 @@ class ExoTDD
             "I" => 1
         ];
 
-        if($number >= 10){
-            for($i = 0; $i < $number / 10; $i++){
-                $result .= "X";
-            }
-        }else{
-            for($i = 0; $i < $number; $i++){
-                $result .= "I";
-            }
+        $reste = $number; 
+
+        while($reste >= 10){
+            $result .= "X";
+            $reste-=10;
         }
-       
+        while($reste >= 1){
+            $result .= "I";
+            $reste-=1;
+        }
         return $result;
 
 
