@@ -22,6 +22,12 @@ final class exoTddTest extends TestCase
     {
         $this->assertEquals(0, ExoTDD::romanToDecimal(""));
         $this->assertEquals(1, ExoTDD::romanToDecimal("I"));
+        $this->assertEquals(5, ExoTDD::romanToDecimal("V"));
+        $this->assertEquals(10, ExoTDD::romanToDecimal("X"));
+        $this->assertEquals(50, ExoTDD::romanToDecimal("L"));
+        $this->assertEquals(100, ExoTDD::romanToDecimal("C"));
+        $this->assertEquals(500, ExoTDD::romanToDecimal("D"));
+        $this->assertEquals(1000, ExoTDD::romanToDecimal("M"));
     }
     
 }

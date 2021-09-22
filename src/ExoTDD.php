@@ -42,8 +42,38 @@ class ExoTDD
 
     */
     public static function romanToDecimal($romanNumber){
-        if($romanNumber == "I"){
+
+        $arrayRomanNumber =[
+            "M" => 1000,
+            "CM" => 900,
+            "D" => 500,
+            "CD" => 400,
+            "C" => 100,
+            "XC" => 90,
+            "L" => 50,
+            "XL" => 40,
+            "X" => 10,
+            "IX" => 9,
+            "V" => 5,
+            "IV" => 4,
+            "I" => 1
+        ];
+
+        if ($romanNumber == 'I')
             return 1;
-        }else return 0;
+        if ($romanNumber == 'V')
+            return 5;
+        if ($romanNumber == 'X')
+            return 10;
+        if ($romanNumber == 'L')
+            return 50;
+        if ($romanNumber == 'C')
+            return 100;
+        if ($romanNumber == 'D')
+            return 500;
+        if ($romanNumber == 'M')
+            return 1000;
+
+        
     }
 }
