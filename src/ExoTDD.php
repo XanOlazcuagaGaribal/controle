@@ -59,21 +59,15 @@ class ExoTDD
             "I" => 1
         ];
 
-        if ($romanNumber == 'I')
-            return 1;
-        if ($romanNumber == 'V')
-            return 5;
-        if ($romanNumber == 'X')
-            return 10;
-        if ($romanNumber == 'L')
-            return 50;
-        if ($romanNumber == 'C')
-            return 100;
-        if ($romanNumber == 'D')
-            return 500;
-        if ($romanNumber == 'M')
-            return 1000;
+        $result = "";
 
+        foreach($arrayRomanNumber as $roman => $value){
+            if($roman == $romanNumber){
+                $result = $value;
+            }
+        }
+
+        return $result;
         
     }
 }

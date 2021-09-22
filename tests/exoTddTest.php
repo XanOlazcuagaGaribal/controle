@@ -20,7 +20,6 @@ final class exoTddTest extends TestCase
 
     public function testRomanToDecimal(): void 
     {
-        $this->assertEquals(0, ExoTDD::romanToDecimal(""));
         $this->assertEquals(1, ExoTDD::romanToDecimal("I"));
         $this->assertEquals(5, ExoTDD::romanToDecimal("V"));
         $this->assertEquals(10, ExoTDD::romanToDecimal("X"));
