@@ -10,7 +10,7 @@ final class exoTddTest extends TestCase
         $this->assertEquals("I",ExoTDD::decimalToRoman(1));
         $this->assertEquals("II",ExoTDD::decimalToRoman(2));
         $this->assertEquals("III",ExoTDD::decimalToRoman(3));
-        $this->assertEquals("IV",ExoTDD::decimalToRoman(4));
+        $this->assertEquals("VI",ExoTDD::decimalToRoman(6));
     }
     
 }
