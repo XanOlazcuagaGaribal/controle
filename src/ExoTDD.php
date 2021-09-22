@@ -41,4 +41,9 @@ class ExoTDD
     paramètre une chaîne de caractères représentant un entier entre 0 et 3 000 et renvoie cet entier. (6 points)
 
     */
+    public static function romanToDecimal($romanNumber){
+        if($romanNumber == "I"){
+            return 1;
+        }else return 0;
+    }
 }

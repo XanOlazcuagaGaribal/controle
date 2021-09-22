@@ -17,5 +17,11 @@ final class exoTddTest extends TestCase
         $this->assertEquals("XXV",ExoTDD::decimalToRoman(25));
         $this->assertEquals("MMM",ExoTDD::decimalToRoman(3000));
     }
+
+    public function testRomanToDecimal(): void 
+    {
+        $this->assertEquals(0, ExoTDD::romanToDecimal(""));
+        $this->assertEquals(1, ExoTDD::romanToDecimal("I"));
+    }
     
 }
